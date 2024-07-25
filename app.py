@@ -11,6 +11,7 @@ app.logger.addHandler(handler)
 @app.route('/')
 def hello():
     app.logger.info('Request received')
+    print("PRINTING")
     return 'Hello, World!'
 
 if __name__ == '__main__':
